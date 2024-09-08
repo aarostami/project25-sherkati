@@ -1,0 +1,328 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: Jura;
+	src: url('../font/jura/JuraBook.ttf') format('truetype');
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* h1 { font-size: calc(1.375rem + 1.5vm) } */
+h1 {
+	font-size: calc(1.375rem + 1.5rem)
+}
+
+/* h2 { font-size: calc(1.325rem + .9vm) } */
+h2 {
+	font-size: calc(1.325rem + .9rem)
+}
+
+/* h3 { font-size: calc(1.3rem + .6vm) } */
+h3 {
+	font-size: calc(1.3rem + .6rem)
+}
+
+/* h4 { font-size: calc(1.275rem + .3vm) } */
+h4 {
+	font-size: calc(1.275rem + .3rem)
+}
+
+h5 {
+	font-size: 1.25rem
+}
+
+h6 {
+	font-size: 1rem
+}
+
+p {
+	font-size: 1rem
+}
+
+.container {
+	padding-left: .75rem !important;
+	padding-right: .75rem !important;
+}
+
+
+@media screen and (max-width: 576px) {
+	header .site_nav {
+		position: relative;
+
+	}
+
+	header .site_nav .site_nav_menu {
+		position: absolute;
+		width: 94%;
+		z-index: 9;
+		background-color: #374045;
+		top: 100%;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	header .site_nav .site_nav_menu {
+		display: flex !important;
+	}
+}
+
+header .site_slider .owl-stage-outer {
+	position: relative;
+}
+
+header .site_slider .owl-dots {
+	position: absolute;
+	bottom: 0%;
+	right: 48%;
+}
+
+header .site_slider .owl-mynav {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 47%;
+	right: 2%;
+	width: 97%;
+}
+
+header .site_slider .owl-mynav button i {
+	font-size: 22px;
+	color: white !important;
+}
+
+header .site_slider #slide_1 {
+	background-image: url('../image/slide1.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+header .site_slider #slide_2 {
+	background-image: url('../image/slide1.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+header .site_slider #slide_1 h2 {
+	font-weight: lighter;
+	font-family: Jura;
+}
+
+header .site_introduce .site_introduce_middle_box {
+	max-width: 25rem;
+	position: relative;
+	right: -50%;
+}
+
+header .site_introduce {
+	background-image: url('../image/Illustration-Art-PNG-Isolated-Photos1.png');
+	/* height: 153%; */
+	/* width: 50%; */
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 50%;
+}
+
+main .main_blog .owl-carousel {
+	direction: ltr;
+}
+
+
+
+
+main .main_portfolio .main_portfolio_card .main_portfolio_card_image a {
+	position: absolute;
+	right: 35%;
+	top: 40%;
+	transition: all 0.4s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 3;
+}
+
+main .main_portfolio .main_portfolio_card .main_portfolio_card_image:hover a {
+	visibility: visible;
+	opacity: 1;
+}
+
+main .main_portfolio .main_portfolio_card .main_portfolio_card_image:hover a::before {
+	content: '';
+	background-color: #D9D9D9;
+	position: absolute;
+	right: -133%;
+	top: 45%;
+	width: 6.8rem;
+	height: 2px;
+	animation-name: anim_portfolio_link_before;
+	animation-duration: 0.7s;
+	animation-direction: alternate;
+	animation-iteration-count: 1;
+}
+
+main .main_portfolio .main_portfolio_card .main_portfolio_card_image:hover a::after {
+	content: '';
+	background-color: #D9D9D9;
+	position: absolute;
+	left: -145%;
+	top: 45%;
+	width: 7.5rem;
+	height: 2px;
+	animation-name: anim_portfolio_link_after;
+	animation-duration: 0.7s;
+	animation-direction: alternate;
+	animation-iteration-count: 1;
+}
+
+main .main_portfolio .main_portfolio_card .main_portfolio_card_image p {
+	position: absolute;
+	bottom: 5%;
+	left: 4%;
+	transition: all 0.4s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 3;
+}
+
+main .main_portfolio .main_portfolio_card .main_portfolio_card_image:hover p {
+	visibility: visible;
+	opacity: 1;
+}
+
+main .main_portfolio .main_portfolio_card .main_portfolio_card_image:hover img {
+	filter: brightness(0.6);
+	transition: all 0.5s;
+}
+
+main .main_comment .main_comment_slider {
+	display: block !important;
+}
+
+main .main_comment .main_comment_slider .owl-dots {
+	display: none;
+}
+
+
+main .main_comment .main_comment_slider .owl-stage-outer .owl-stage .owl-item {}
+
+main .main_comment .main_comment_slider .owl-stage-outer .owl-stage .owl-item img {
+	width: 50% !important;
+	box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+main .main_comment .main_comment_slider .owl-mynav {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 45%;
+	right: 1.5%;
+	width: 97%;
+}
+
+main .main_comment .main_comment_slider .owl-mynav button {
+	background-color: #757171;
+	padding: 8px 14px;
+	border-radius: 30px;
+}
+
+main .main_comment .main_comment_slider .owl-mynav button i {
+	color: white;
+}
+
+main .main_companies .main_companies_icons img {
+	max-width: 35% !important;
+}
+
+footer .footer_content .footer_content_secondaccess ul {}
+
+footer .footer_content .footer_content_secondaccess ul li::marker:hover {}
+
+main hr {
+	max-width: 90%;
+}
+
+@keyframes anim_portfolio_link_before {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 6.8rem;
+	}
+}
+
+@keyframes anim_portfolio_link_after {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 7.5rem;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	header .site_introduce .site_introduce_middle_box {
+		max-width: 10rem;
+	}
+
+	header .site_introduce {
+		background-size: 55%;
+	}
+
+	main .main_blog .owl-carousel {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	footer .footer_access .footer_access_firstaccess ul,
+	footer .footer_access .footer_access_secondaccess ul {
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	header .site_slider .owl-item {
+		height: 27rem;
+	}
+
+	main .main_comment .main_comment_slider .owl-stage-outer {
+		/* width: 82%; */
+		margin: 0 auto;
+
+	}
+
+	main .main_comment .main_comment_slider .owl-stage-outer .owl-stage .owl-item {
+		padding-right: 0.5%;
+		padding-left: 0.5%;
+
+		/* margin-left: 200px;
+		margin-right: 200px; */
+	}
+
+	main .main_comment .main_comment_slider .owl-stage-outer .owl-stage .owl-item.active {
+		/* margin-left: 200px;
+		margin-right: 200px; */
+		width: 12% !important;
+		margin: 0px 2.33%;
+
+	}
+
+	main .main_comment .main_comment_slider .owl-stage-outer .owl-stage .owl-item img {
+		width: 20% !important;
+	}
+
+	main .main_comment .main_comment_slider .owl-mynav {
+		top: 37% !important;
+		right: 5.5% !important;
+		width: 90% !important;
+	}
+
+	main .main_companies .main_companies_icons img {
+		max-width: 12% !important;
+	}
+}

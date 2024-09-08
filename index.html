@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./owl.carousel.min.css">
+	<link rel="stylesheet" href="./owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./tailwindout/dist/tailwind.css">
+	<title>سایت شرکتی</title>
+</head>
+
+<body class="bg-[#374045]">
+	<header>
+		<div class="mycon site_topnav bg-black sm:flex sm:px-12">
+			<ul class="hidden sm:w-1/2 sm:flex flex-row sm:items-center sm:gap-x-2">
+				<li class=""><a href="#" class="hover:opacity-50"><img src="./image/facebook.png"></a></li>
+				<li class=""><a href="#" class="hover:opacity-50"><img src="./image/telegram.png"></a></li>
+				<li class=""><a href="#" class="hover:opacity-50"><img src="./image/whatsapp.png"></a></li>
+				<li class=""><a href="#" class="hover:opacity-50"><img src="./image/instagram.png"></a></li>
+				<li class=""><a href="#" class="hover:opacity-50"><img src="./image/envelop.png"></a></li>
+			</ul>
+			<ul class="sm:w-1/2 mr-3 sm:mr-0 sm:flex sm:justify-end">
+				<li class="text-gray-300 py-1 sm:ml-6">ساعت کار : شنبه تا چهارشنبه 9 تا 17</li>
+				<li class="text-gray-300 py-1">تلفن : 091111111 - 021000000</li>
+			</ul>
+		</div>
+		<nav class="mycon site_nav container mx-auto bg-[#374045] sm:h-28 py-3 columns-2 flex sm:flex-row justify-between items-center"
+			x-data="{open: false}">
+			<button type="button" class="w-1/6 text-right sm:hidden" @click="open = !open">
+				<img src="./image/ham-nav.png">
+			</button>
+			<ul class="site_nav_menu min-h-max sm:h-12 rounded-lg sm:flex sm:order-2 sm:flex-row sm:flex-wrap flex-col justify-center sm:justify-start items-center sm:gap-0 py-3"
+				x-show="open">
+				<li class="sm:ml-4 mb-1 sm:mb-0"><a href="#"
+						class="text-black bg-white px-5 py-1 rounded-md duration-[400ms] inline-block w-full sm:inline sm:w-auto">خانه</a>
+				</li>
+				<li class="sm:ml-4 mb-1 sm:mb-0"><a href="#"
+						class="text-[#E1D89F] px-5 py-1 rounded-md hover:bg-white hover:text-black duration-[400ms] inline-block w-full sm:inline sm:w-auto">نمونه
+						کارها</a></li>
+				<li class="sm:ml-4 mb-1 sm:mb-0"><a href="#"
+						class="text-[#E1D89F] px-5 py-1 rounded-md hover:bg-white hover:text-black duration-[400ms] inline-block w-full sm:inline sm:w-auto">خدمات
+						ما</a></li>
+				<li class="sm:ml-4 mb-1 sm:mb-0"><a href="#"
+						class="text-[#E1D89F] px-5 py-1 rounded-md hover:bg-white hover:text-black duration-[400ms] inline-block w-full sm:inline sm:w-auto">درباره
+						ما</a></li>
+				<li class=""><a href="#"
+						class="text-[#E1D89F] px-5 py-1 rounded-md hover:bg-white hover:text-black duration-[400ms] inline-block w-full sm:inline sm:w-auto">تماس
+						با
+						ما</a></li>
+			</ul>
+			<a href="#" class="rounded-md bg-[#D89216] text-white px-3 py-1 sm:order-3">درخواست مشاوره</a>
+			<div
+				class="site_nav_logo bg-[#D89216] h-20 w-20 rounded-full text-center pt-8 text-xl font-bold sm:order-1">
+				Logo</div>
+		</nav>
+		<div class="mycon site_slider owl-carousel owl-theme mt-6 sm:mt-0 sm:px-0 block">
+			<div class="owl-stage-outer">
+				<div class="owl-stage">
+					<div class="owl-item flex h-64 flex-col justify-center" id="slide_1">
+						<h2 class="text-3xl text-center mb-5 text-white">Architect designs</h2>
+						<p class="text-center text-lg mb-5 text-white">طراحی های بی نظیر</p>
+					</div>
+					<div class="owl-item flex h-64 flex-col justify-center" id="slide_2">
+						<h2 class="text-3xl text-center mb-5 text-white">Architect designs</h2>
+						<p class="text-center text-lg mb-5 text-white">طراحی های بی نظیر</p>
+					</div>
+				</div>
+			</div>
+			<div class="owl-mynav">
+				<button type="button" role="presentation" class="owl-prev">
+					<i class="fas fa-chevron-right" aria-label="Previous"></i>
+				</button>
+				<button type="button" role="presentation" class="owl-next">
+					<i class="fas fa-chevron-left" aria-label="Next"></i>
+				</button>
+			</div>
+		</div>
+	</header>
+	<main class="">
+		<section class="mycon main_services container mx-auto pt-8">
+			<h2 class="text-center text-3xl text-cream">خدمات ما</h2>
+			<div
+				class="main_services_row flex flex-wrap sm:flex-col md:flex-row justify-center items-center gap-y-16 mt-10">
+				<div class="main_services_box1 flex flex-col sm:flex-row sm:flex-wrap items-center sm:w-1/2">
+					<img src="./image/service1.png" class="w-28">
+					<h3 class="text-cream mt-4 sm:mr-5">طراحی معماری</h3>
+					<p class="text-white mt-4 leading-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+						استفاده از
+						طراحان گرافیک است.</p>
+				</div>
+				<div class="main_services_box2 flex flex-col sm:flex-row sm:flex-wrap items-center sm:w-1/2">
+					<img src="./image/service2.png" class="w-28">
+					<h3 class="text-cream mt-4 sm:mr-5">ساخت و ساز</h3>
+					<p class="text-white mt-4 leading-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+						استفاده از
+						طراحان
+						گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+				</div>
+			</div>
+			<div
+				class="main_services_row flex flex-wrap sm:flex-col md:flex-row justify-center items-center gap-y-16 mt-10">
+				<div class="main_services_box3 flex flex-col sm:flex-row sm:flex-wrap items-center sm:w-1/2">
+					<img src="./image/service3.png" class="w-28">
+					<h3 class="text-cream mt-4 sm:mr-5">طراحی داخلی</h3>
+					<p class="text-white mt-4 leading-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+						استفاده از
+						طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+				</div>
+				<div class="main_services_box3 flex flex-col sm:flex-row sm:flex-wrap items-center sm:w-1/2">
+					<img src="./image/service4.png" class="w-28">
+					<h3 class="text-cream mt-4 sm:mr-5">فروش مصالح</h3>
+					<p class="text-white mt-4 leading-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+						استفاده از
+						طراحان گرافیک است.</p>
+				</div>
+			</div>
+		</section>
+		<hr class="border-[#D89216] border mx-auto my-12">
+		<section class="mycon main_portfolio container mx-auto">
+			<h2 class="text-center text-3xl text-cream pb-8">پروژه های ما</h2>
+			<div class="main_portfolio_contain flex flex-col sm:flex-row items-center justify-around gap-5 sm:gap-5 lg:gap-0 mt-8">
+				<div class="main_portfolio_card bg-[#DBDBDB] p-6 w-fit hover:shadow-lg hover:shadow-slate-500">
+					<div class="main_portfolio_card_image relative">
+						<a href="#"
+							class="text-[#D9D9D9] hover:text-black hover:bg-white border rounded-full px-3 pt-1 pb-2">دیدن
+							پروژه</a>
+						<p class="text-[#D9D9D9]">تاریخ تکمیل : <span>2022/4/1</span></p>
+						<img src="./image/portfolio1.png" class="h-48">
+					</div>
+					<div class="md:relative pt-3">
+						<h2 class="text-cream-dark text-2xl">نمونه کار اول</h2>
+						<p class="max-w-sm mt-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+							استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+							است.</p>
+					</div>
+				</div>
+				<div class="main_portfolio_card bg-[#DBDBDB] p-6 w-fit hover:shadow-lg hover:shadow-slate-500">
+					<div class="main_portfolio_card_image relative">
+						<a href="#"
+							class="text-[#D9D9D9] hover:text-black hover:bg-white border rounded-full px-3 pt-1 pb-2">دیدن
+							پروژه</a>
+						<p class="text-[#D9D9D9]">تاریخ تکمیل : <span>2022/4/1</span></p>
+						<img src="./image/portfolio2.png" class="h-48">
+					</div>
+					<div class="md:relative pt-3">
+						<h2 class="text-cream-dark text-2xl">نمونه کار دوم</h2>
+						<p class="max-w-sm mt-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+							استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+							است.</p>
+					</div>
+				</div>
+			</div>
+			<div class="main_portfolio_contain hidden sm:flex flex-col sm:flex-row items-center justify-around gap-5 sm:gap-5 lg:gap-0 mt-8">
+				<div
+					class="main_portfolio_card bg-[#DBDBDB] p-6 w-fit hover:shadow-lg hover:shadow-slate-500">
+					<div class="main_portfolio_card_image relative">
+						<a href="#"
+							class="text-[#D9D9D9] hover:text-black hover:bg-white border rounded-full px-3 pt-1 pb-2">دیدن
+							پروژه</a>
+						<p class="text-[#D9D9D9]">تاریخ تکمیل : <span>2022/4/1</span></p>
+						<img src="./image/portfolio3.png" class="h-48">
+					</div>
+					<div class="md:relative pt-3">
+						<h2 class="text-cream-dark text-2xl">نمونه کار سوم</h2>
+						<p class="max-w-sm mt-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+							استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+							لازم
+							است.</p>
+					</div>
+				</div>
+				<div
+					class="main_portfolio_card bg-[#DBDBDB] p-6 w-fit hover:shadow-lg hover:shadow-slate-500">
+					<div class="main_portfolio_card_image relative">
+						<a href="#"
+							class="text-[#D9D9D9] hover:text-black hover:bg-white border rounded-full px-3 pt-1 pb-2">دیدن
+							پروژه</a>
+						<p class="text-[#D9D9D9]">تاریخ تکمیل : <span>2022/4/1</span></p>
+						<img src="./image/portfolio4.png" class="h-48">
+					</div>
+					<div class="md:relative pt-3">
+						<h2 class="text-cream-dark text-2xl">نمونه کار چهارم</h2>
+						<p class="max-w-sm mt-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+							استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+							لازم
+							است.</p>
+					</div>
+				</div>
+			</div>
+			<a href="#"
+				class="block text-center border text-white w-32 mx-auto py-2 my-10 hover:bg-white hover:text-black">دیدن
+				همه پروژه ها</a>
+		</section>
+		<hr class="border-[#D89216] border mx-auto my-12">
+		<section class="mycon main_numbers">
+			<h2 class="text-center text-3xl text-cream">ارقام شرکت</h2>
+			<p class="text-cream text-center mt-5">کارهای صورت گرفته تا به امروز شرکت</p>
+			<div class="mt-5 sm:mt-0 sm:flex sm:justify-center sm:items-center sm:gap-24">
+				<div class="s1 item flex flex-col items-center sm:pt-8">
+					<img src="./image/tick.png">
+					<h3 class="text-[#E1D89F] text-5xl fond-bold text-center mt-2">12<span class="text-white">+</span>
+					</h3>
+					<p class="text-cream text-right mt-2">سال تجربه عمرانی</p>
+				</div>
+				<div class="s1 item flex flex-col items-center pt-8">
+					<img src="./image/tick.png">
+					<h3 class="text-[#E1D89F] text-5xl fond-bold text-center mt-2">95<span class="text-white">+</span>
+					</h3>
+					<p class="text-cream text-right mt-2">طرح درحال انجام</p>
+				</div>
+				<div class="s1 item flex flex-col items-center pt-8">
+					<img src="./image/tick.png">
+					<h3 class="text-[#E1D89F] text-5xl fond-bold text-center mt-2">288<span class="text-white">+</span>
+					</h3>
+					<p class="text-cream text-right mt-2">پروژه های تکمیل شده</p>
+				</div>
+			</div>
+		</section>
+		<hr class="border-[#D89216] border mx-auto my-12">
+		<section class="mycon main_team">
+			<h2 class="text-center text-3xl text-cream">اعضای تیم</h2>
+			<div class="main_team_boxes pt-8 sm:flex sm:items-center sm:justify-center sm:gap-16">
+				<div class="main_team_box1 flex flex-col items-center sm:pt-7">
+					<img src="./image/team1.png" class="hover:opacity-70">
+					<h3 class="text-2xl fond-bold text-center mt-3 text-white">عضو یک</h3>
+					<p class="text-center mt-4 px-7 text-white">جایگاه</p>
+				</div>
+				<div class="main_team_box1 flex flex-col items-center pt-7">
+					<img src="./image/team2.png" class="hover:opacity-70">
+					<h3 class="text-2xl fond-bold text-center mt-3 text-white">عضو دو</h3>
+					<p class="text-center mt-4 px-7 text-white">جایگاه</p>
+				</div>
+				<div class="main_team_box1 flex flex-col items-center pt-7">
+					<img src="./image/team3.png" class="hover:opacity-70">
+					<h3 class="text-2xl fond-bold text-center mt-3 text-white">عضو سه</h3>
+					<p class="text-center mt-4 px-7 text-white">جایگاه</p>
+				</div>
+				<div class="main_team_box1 flex flex-col items-center pt-7">
+					<img src="./image/team4.png" class="hover:opacity-70">
+					<h3 class="text-2xl fond-bold text-center mt-3 text-white">عضو چهار</h3>
+					<p class="text-center mt-4 px-7 text-white">جایگاه</p>
+				</div>
+			</div>
+		</section>
+		<hr class="border-[#D89216] border mx-auto my-12">
+		<section class="mycon main_comment">
+			<h2 class="text-center text-3xl text-cream">نظرات مشتریان</h2>
+			<div class="main_comment_slider owl-carousel owl-theme mt-10">
+				<div class="owl-stage-outer">
+					<div class="owl-stage">
+						<div class="owl-item bg-[#D9D9D9] py-5 sm:py-8 sm:flex rounded-2xl">
+							<img src="./image/comment1.jpg" class="rounded-2xl mx-auto">
+							<div class="comment_body">
+								<h3 class="text-2xl font-bold text-center sm:text-right mt-5 sm:px-7">مشتری یک</h3>
+								<p class="mt-5 px-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+									با
+									استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+									که
+									لازم
+									است.</p>
+							</div>
+						</div>
+						<div class="owl-item bg-[#D9D9D9] py-5 sm:py-8 sm:flex rounded-2xl">
+							<img src="./image/comment1.jpg" class="rounded-2xl mx-auto">
+							<div class="comment_body">
+								<h3 class="text-2xl font-bold text-center sm:text-right mt-5 sm:px-7">مشتری یک</h3>
+								<p class="mt-5 px-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+									با
+									استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+									که
+									لازم
+									است.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="owl-mynav">
+					<button type="button" role="presentation" class="owl-prev">
+						<i class="fas fa-chevron-right" aria-label="Previous"></i>
+					</button>
+					<button type="button" role="presentation" class="owl-next">
+						<i class="fas fa-chevron-left" aria-label="Next"></i>
+					</button>
+				</div>
+			</div>
+		</section>
+		<hr class="border-[#D89216] border mx-auto my-12">
+		<section class="mycon main_companies">
+			<h2 class="text-center text-3xl text-cream">مشتریان ما</h2>
+			<div
+				class="main_companies_icons flex flex-col sm:flex-row sm:gap-x-12 justify-center items-center gap-y-6 py-10">
+				<img src="./image/m1.png">
+				<img src="./image/m2.png">
+				<img src="./image/m3.png">
+				<img src="./image/m4.png">
+				<img src="./image/m1.png">
+			</div>
+		</section>
+	</main>
+	<footer class="bg-[#181517]">
+		<div class="mycon footer_content sm:flex sm:justify-between sm:pt-10 sm:pb-6 sm:px-5">
+			<div class="footer_content_firstaccess text-center md:text-right sm:w-1/3">
+				<h1 class="block text-3xl pt-6 sm:pt-0 text-cream">درباره ما</h1>
+				<p class="text-white text-justify text-sm mt-6 px-4 leading-6 font-thin">لورم ایپسوم متن ساختگی با تولید
+					سادگی نامفهوم از صنعت
+					چاپ و با استفاده از طراحان گرافیک است.
+					چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. لورم ایپسوم متن ساختگی با تولید
+					سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+			</div>
+			<div class="footer_content_secondaccess text-center md:text-right mt-6 md:mt-0 sm:w-1/5">
+				<h4 class="text-2xl text-cream">لینک های مرتبط</h4>
+				<ul class="mt-5 text-[#D3D3D3] flex flex-col items-center sm:items-start max-w-sm">
+					<li class="mb-2 hover:list-disc marker:text-[#D89216]"><a href="#"
+							class="text-md hover:text-[#D89216]">خدمات</a></li>
+					<li class="mb-2 hover:list-disc marker:text-[#D89216]"><a href="#"
+							class="text-md hover:text-[#D89216]">پروژه ها</a></li>
+					<li class="mb-2 hover:list-disc marker:text-[#D89216]"><a href="#"
+							class="text-md hover:text-[#D89216]">بلاگ</a></li>
+					<li class="mb-2 hover:list-disc marker:text-[#D89216]"><a href="#"
+							class="text-md hover:text-[#D89216]">درباره ما</a></li>
+					<li class="mb-2 hover:list-disc marker:text-[#D89216]"><a href="#"
+							class="text-md hover:text-[#D89216]">تماس با ما</a></li>
+				</ul>
+			</div>
+			<div class="footer_content_socials text-center md:text-right mt-6 md:mt-0 sm:w-1/3">
+				<h4 class="text-2xl text-cream">اطلاعات تماس</h4>
+				<p class="text-[#D3D3D3] mt-6">آدرس : لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ. </p>
+				<p class="text-[#D3D3D3] mt-6">تلفن : 091111111 - 021000000</p>
+				<ul class="sm:w-1/2 flex inline-flex gap-x-4 mt-6">
+					<li class=""><a href="#" class="hover:bg-gray-600"><img src="./image/facebook.png"></a></li>
+					<li class=""><a href="#" class="hover:text-gray-600"><img src="./image/telegram.png"></a></li>
+					<li class=""><a href="#" class="hover:text-gray-600"><img src="./image/whatsapp.png"></a></li>
+					<li class=""><a href="#" class="hover:text-gray-600"><img src="./image/instagram.png"></a></li>
+					<li class=""><a href="#" class="hover:text-gray-600"><img src="./image/envelop.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_down bg-black mt-6">
+			<p class="text-white text-sm py-2 pr-4">تمامی حقوق برای طراح محفوظ است. 2022</p>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+	<script src="https://kit.fontawesome.com/9c7ff2c1b1.js" crossorigin="anonymous"></script>
+	<script src="./owl.carousel.min.js"></script>
+	<script src="./app.js"></script>
+</body>
+
+</html>
